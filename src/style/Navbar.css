@@ -1,0 +1,179 @@
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 3rem;
+  background: transparent;
+  backdrop-filter: blur(2px);
+  border-bottom: 1px solid rgba(83, 152, 236, 0.2);
+  animation: slideDown 0.8s ease-out forwards;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left,
+.nav-center,
+.get-started-btn {
+  opacity: 0;
+  animation: slideDown 0.6s ease-out forwards;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation-delay: 0.2s;
+}
+
+.nav-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.site-sol {
+  opacity: 50%;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.nav-center {
+  display: flex;
+  gap: 25px;
+  animation-delay: 0.4s;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 1.3rem;
+  opacity: 70%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  opacity: 100%;
+  text-decoration: underline;
+  text-underline-offset: 22px;
+  text-decoration-color: #0ea5e9;
+  text-decoration-thickness: 5px;
+  font-weight: 600;
+}
+
+.get-started-btn {
+  background: linear-gradient(135deg, #009fe3 0%, #024dc7 100%);
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+  animation-delay: 0.6s;
+}
+
+.get-started-btn:hover {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 0.5rem 2%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar {
+    padding: 0.8rem 2rem;
+  }
+  .nav-center {
+    gap: 15px;
+  }
+  .nav-btn {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-center {
+    display: none;
+  }
+
+  .site-name {
+    font-size: 1.2rem;
+  }
+
+  .site-sol {
+    font-size: 1rem;
+  }
+
+  .get-started-btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-left {
+    gap: 8px;
+  }
+
+  .nav-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .site-name {
+    font-size: 1.1rem;
+    letter-spacing: 0px;
+  }
+
+  .site-sol {
+    display: none;
+  }
+
+  .get-started-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 280px) {
+  .navbar {
+    padding: 0.5rem 0.5rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

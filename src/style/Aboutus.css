@@ -1,0 +1,221 @@
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes expandLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90px;
+  }
+}
+
+.about-section {
+  padding: 80px 4rem;
+
+  background: url("../assets/Aboutus.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.about-left,
+.about-right {
+  flex: 1;
+}
+.about-left {
+  opacity: 0;
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.about-main-img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(29, 139, 212, 0.3);
+  border: 2px solid rgba(38, 121, 230, 0.1);
+  height: auto;
+  cursor: pointer;
+}
+
+.about-main-img:hover {
+  transform: scale(1.02) rotate(1deg);
+  transition: 0.5s ease;
+  box-shadow: 0 30px 60px rgba(29, 139, 212, 0.5);
+}
+
+.section-tag {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #0343a3;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.tag-line {
+  width: 90px;
+  height: 2px;
+  background: #0343a3;
+  animation: expandLine 1s ease-out 0.5s both;
+}
+.about-right {
+  opacity: 0;
+  animation: fadeInRight 1s ease-out 0.3s forwards; /* 0.3s delay */
+}
+
+.about-right h3 {
+  font-size: 2rem;
+  margin: 10px 0;
+  line-height: 1.2;
+  color: #0343a3;
+}
+
+.about-points {
+  margin: 10px 0;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0px;
+  opacity: 0;
+  animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+.point:nth-child(1) {
+  animation-delay: 0.6s;
+}
+.point:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.point:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.point p {
+  font-size: 1.1rem;
+  color: #021c3c;
+  font-weight: 600;
+}
+
+.read-more-btn {
+  padding: 12px 35px;
+  background: linear-gradient(135deg, #38bdf8 0%, #00809d 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.read-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}
+
+/* --- About Section Responsiveness --- */
+
+/* 1. Tablets (1024px se niche) */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 60px 2rem;
+  }
+
+  .about-container {
+    gap: 50px;
+  }
+
+  .section-tag {
+    font-size: 2rem;
+  }
+
+  .about-right h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* 2. Mobile View (768px se niche) */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 1.5rem;
+    background-attachment: scroll;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .section-tag {
+    justify-content: center;
+    font-size: 1.8rem;
+  }
+
+  .tag-line {
+    width: 60px;
+  }
+
+  .point {
+    justify-content: center;
+  }
+
+  .about-main-img {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* 3. Small Mobile (480px se niche) */
+@media (max-width: 480px) {
+  .section-tag {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .about-right h3 {
+    font-size: 1.4rem;
+  }
+
+  .point p {
+    font-size: 1rem;
+  }
+
+  .read-more-btn {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
