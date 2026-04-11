@@ -5,6 +5,12 @@ import Project2 from "../assets/RealState.png";
 import Project3 from "../assets/Fitness.png";
 
 const Project = () => {
+  const handleViewProject = () => {
+    alert(
+      " Coming Soon! I'm currently polishing the final details of this project. Stay tuned!",
+    );
+  };
+
   return (
     <section className="projects-section">
       <h2 className="services-title">Our Projects</h2>{" "}
@@ -14,7 +20,9 @@ const Project = () => {
             <img src={Project1} alt="E-commerce App" />
 
             <div className="project-overlay">
-              <button className="view-project-btn">View Project</button>
+              <button className="view-project-btn" onClick={handleViewProject}>
+                View Project
+              </button>
             </div>
           </div>
           <div className="project-info">
@@ -26,7 +34,9 @@ const Project = () => {
           <div className="project-img-container">
             <img src={Project2} alt="Real Estate Web" />
             <div className="project-overlay">
-              <button className="view-project-btn">View Project</button>
+              <button className="view-project-btn" onClick={handleViewProject}>
+                View Project
+              </button>
             </div>
           </div>
           <div className="project-info">
@@ -38,7 +48,9 @@ const Project = () => {
           <div className="project-img-container">
             <img src={Project3} alt="Fitness App" />
             <div className="project-overlay">
-              <button className="view-project-btn">View Project</button>
+              <button className="view-project-btn" onClick={handleViewProject}>
+                View Project
+              </button>
             </div>
           </div>
           <div className="project-info">
