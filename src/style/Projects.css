@@ -153,3 +153,311 @@
 .view-all-btn:hover .arrow-icon {
   transform: translateX(6px);
 }
+
+/* --- Projects Section: 1440px - 1920px (Full HD / Ultrawide) --- */
+@media (min-width: 1441px) {
+  .projects-section {
+    padding: 80px 10%; /* Sides par kafi space rakhi hai balance ke liye */
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 60px; /* Sab se zyada gap isi range mein hoga */
+    justify-content: center;
+    max-width: 1600px; /* Design ko bikhre se bachane ke liye limit */
+    margin: 40px auto 0;
+  }
+
+  .project-card {
+    width: 420px; /* Professional large size */
+    border-radius: 25px;
+  }
+
+  .project-img-container {
+    height: 260px; /* Badi screens par images ko highlight kiya */
+  }
+
+  .project-info {
+    padding: 20px;
+  }
+
+  .project-info h3 {
+    font-size: 1.4rem;
+  }
+
+  .view-project-btn {
+    padding: 14px 30px;
+    font-size: 1.1rem;
+  }
+
+  .view-all-container {
+    margin-top: 80px;
+  }
+
+  .view-all-btn {
+    width: fit-content;
+    margin: 0 auto; 
+    padding: 16px 45px;
+    font-size: 1.25rem;
+  }
+}
+
+
+/* --- Projects Section: 1280px - 1440px (Large Laptops) --- */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .projects-section {
+    padding: 60px 5rem;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 40px; /* Bada gap cleaner look ke liye */
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 400px; /* Boxes ka size expand kiya */
+    border-radius: 20px;
+  }
+
+  .project-img-container {
+    height: 240px; /* Images ko mazeed clear dikhane ke liye */
+  }
+
+  .project-info {
+    padding: 15px;
+  }
+
+  .project-info h3 {
+    font-size: 1.25rem;
+  }
+
+  .view-project-btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+
+  .view-all-container {
+    margin-top: 60px;
+  }
+
+  .view-all-btn {
+    width: fit-content;
+    margin: 0 auto; /* Horizontal center alignment */
+    padding: 14px 40px;
+    font-size: 1.15rem;
+  }
+}
+
+
+/* --- Projects Section: 1025px - 1280px (Standard Desktop) --- */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .projects-section {
+    padding: 50px 3rem;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 30px; /* Wider gap for a cleaner look */
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 350px; /* Fixed professional width */
+    border-radius: 20px;
+  }
+
+  .project-img-container {
+    height: 220px; /* Detailed image view */
+  }
+
+  .project-info {
+    padding: 15px;
+  }
+
+  .project-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .view-project-btn {
+    padding: 12px 25px;
+    font-size: 0.95rem;
+  }
+
+  .view-all-container {
+    margin-top: 60px;
+  }
+
+  .view-all-btn {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 14px 35px;
+    font-size: 1.1rem;
+  }
+}
+
+
+/* --- Projects Section: 769px - 1024px (Laptops/Landscape Tablets) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projects-section {
+    padding: 40px 2rem;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: nowrap; /* Keep them in 1 row */
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 30%; /* Balanced width */
+    border-radius: 18px;
+  }
+
+  .project-img-container {
+    height: 180px; /* Better image visibility */
+  }
+
+  .project-info {
+    padding: 12px;
+  }
+
+  .project-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .view-project-btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .view-all-container {
+    margin-top: 50px;
+  }
+
+  .view-all-btn {
+    width: fit-content;
+    margin: 0 auto; /* Horizontal Center */
+    font-size: 1.1rem;
+    padding: 12px 30px;
+  }
+}
+
+
+/* --- Projects Section: 481px - 768px (Tablets) --- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .projects-section {
+    padding: 30px 1.5rem;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: nowrap; /* 1 Row layout */
+    gap: 12px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 31%; /* Balanced for tablet */
+    border-radius: 15px;
+  }
+
+  .project-img-container {
+    height: 120px; /* Tablet par height thodi behtar */
+  }
+
+  .project-info {
+    padding: 8px;
+  }
+
+  .project-info h3 {
+    font-size: 0.9rem;
+  }
+
+  .view-project-btn {
+    padding: 8px 15px;
+    font-size: 0.7rem;
+  }
+
+  .view-all-container {
+    margin-top: 40px;
+  }
+
+  .view-all-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+
+/* --- Projects Section: 320px - 480px --- */
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 20px 10px; /* Side padding kam kar di */
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: nowrap; /* 1 Row mein 3 boxes */
+    gap: 8px; /* Bohat kam gap taake fit ayein */
+    margin-top: 20px;
+    padding: 0 5px;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 32%; /* 3 cards ek hi line mein */
+    min-width: 0; 
+    border-radius: 12px;
+  }
+
+  .project-img-container {
+    height: 80px; /* Mobile par image choti */
+  }
+
+  .project-info {
+    padding: 5px;
+  }
+
+  .project-info h3 {
+    font-size: 0.65rem; /* Text size chota kiya */
+    line-height: 1.2;
+  }
+
+  /* View Project Button on Mobile Overlay */
+  .view-project-btn {
+    padding: 5px 8px;
+    font-size: 0.5rem;
+    border-radius: 20px;
+  }
+
+  /* View All Projects Button (Bottom) */
+  .view-all-container {
+    margin-top: 30px;
+  }
+
+  .view-all-btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    width: 60%; /* Button ko center aur wide rakha tap karne ke liye */
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+/* Extra small screens (iPhone 5/SE etc) */
+@media (max-width: 340px) {
+  .project-img-container {
+    height: 60px;
+  }
+  .project-info h3 {
+    font-size: 0.55rem;
+  }
+}
