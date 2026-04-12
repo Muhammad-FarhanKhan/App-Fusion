@@ -78,11 +78,66 @@
   }
 }
 
+
+/* --- Header Section: 481px - 768px (Tablets) --- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .main-header {
+    height: auto;
+    min-height: 75vh; /* Screen ke mutabiq behtar balance */
+    padding: 10px 0;
+  }
+
+  .header-content {
+    flex-direction: column; /* Tablet par bhi image upar, text niche behtar lagta hai */
+    padding: 0 3rem;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .image-section {
+    order: 1;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header-img {
+    max-width: 60%; /* Mobile se thoda bada lekin balance */
+    margin: 0 auto;
+  }
+
+  .text-section {
+    order: 2;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-section h1 {
+    font-size: 2.5rem; /* Font size tablet ke mutabiq bara kiya */
+    margin-bottom: 1rem;
+  }
+
+  .text-section p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    line-height: 1.5;
+  }
+
+  .get-started-btn {
+    width: fit-content;
+    padding: 12px 30px;
+    margin: 25px auto 0;
+  }
+}
+
 /* --- Header Section: 320px - 480px --- */
 @media (max-width: 480px) {
   .main-header {
     height: auto; /* Height auto taake content fit aa sake */
-    min-height: 85vh; /* Screen bharne ke liye */
+    min-height: 75vh; /* Screen bharne ke liye */
     padding-bottom: 30px;
   }
 
